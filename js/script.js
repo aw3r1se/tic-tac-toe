@@ -76,8 +76,8 @@ function handle(row, cell) {
         result.parallels.x1 = true;
         result.parallels.o1 = false;
 
-        result.vertical_x = true;
-        result.vertical_o = false;
+        result.parallels.x2 = true;
+        result.parallels.o2 = false;
 
         for (let j = 0; j < info.size; j++) {
             result.parallels.x1 = result.parallels.x1 && info.cells[i][j];
