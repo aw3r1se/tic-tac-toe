@@ -99,9 +99,9 @@ function handle(row, cell) {
 
             if (i === (info.size - j - 1)) {
                 result.diagonals.x2 = result.diagonals.x2 && info.cells[j][i];
-                result.diagonals.o2 = isNull(info.cells[j][i])
-                    ? true
-                    : result.diagonals.o2 || info.cells[j][i];
+                result.diagonals.o2 = !isNull(info.cells[j][i])
+                    ? result.diagonals.o2 || info.cells[j][i]
+                    : true;
             }
         }
 
