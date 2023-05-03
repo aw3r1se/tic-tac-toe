@@ -1,9 +1,29 @@
 <head>
     <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <div>
-        Крестики нолики
+<header>
+    Крестики нолики
+</header>
+<main>
+    <div class="conf">
+        <label>
+            Размер
+            <input
+                    id="conf-input"
+                    type="number"
+                    min="3"
+                    max="10"
+                    value="3"
+            />
+        </label>
+        <button id="conf-button">
+            Старт
+        </button>
     </div>
+    <div id="field"></div>
+</main>
+<script src="js/script.js"></script>
 </body>
 

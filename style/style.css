@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+
+header {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+main {
+
+}
+
+main .conf {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main #field {
+    display: grid;
+    margin: 30px 0;
+}
+
+main #field .cell {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    width: 50px;
+    height: 50px;
+    border: solid 1px black;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+main #field .used {
+    cursor: auto;
+}
